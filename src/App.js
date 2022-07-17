@@ -9,6 +9,7 @@ import Good from "./Good";
 import Debug from "./Debug";
 import LoadingScreen from "./LoadingScreen";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cart from "./Cart";
 
 function render_drawer(shops, state) {
     const data = [];
@@ -113,9 +114,21 @@ function App() {
                                 </div>
                             } />
                             <Route path="cart" element={
-                                <>
-                                    <h1>Cart</h1>
-                                </>
+                                <div className="App">
+                                    <header className="nav-bar">
+                                        <img src={logo} className="brand-logo" alt="logo"/>
+                                    </header>
+                                    <div className="content">
+                                        <div className="debug_area">
+                                            {/*<Debug debug={JSON.stringify(items, null, 4)}></Debug>*/}
+                                            {/*<Debug debug={JSON.stringify(items.shops, null, 4)}></Debug>*/}
+                                            {/*<Debug debug={tstate}></Debug>*/}
+                                        </div>
+                                        <div className="body">
+                                            <Cart />
+                                        </div>
+                                    </div>
+                                </div>
                             } />
                             <Route path="order" element={
                                 <>

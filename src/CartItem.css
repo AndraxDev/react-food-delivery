@@ -1,0 +1,26 @@
+.cart_item {
+    width: calc(100% - 64px);
+    background-color: rgba(0, 132, 255, 0.2);
+    margin: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.remove_cart_item {
+    right: 32px;
+    font-size: 20px;
+    position: absolute;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.cart_item_title {
+    padding: 0;
+    margin: 0;
+}
+
+.cart_item_price {
+    padding: 0;
+    margin: 0;
+}

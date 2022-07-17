@@ -61,3 +61,8 @@ code {
   overflow: auto;
   overscroll-behavior-y: initial;
 }
+
+.body {
+  position: absolute;
+  top: 56px;
+}

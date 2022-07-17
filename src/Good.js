@@ -1,7 +1,6 @@
 import Logo from './logo.svg'
 import "./Good.css";
 import Button from "@mui/material/Button";
-import App from "./App";
 
 function Good(props) {
     return (

@@ -1,0 +1,56 @@
+.cart_body {
+    width: calc(100vw);
+    height: calc(100vh - 56px);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 56px;
+
+}
+
+.cart_background {
+    right: 0;
+    bottom: 0;
+    top: 56px;
+    width: calc(100vw - 32px);
+    height: calc(100vh - 84px);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    margin: 16px;
+    text-align: start;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior-y: initial;
+}
+
+.cc {
+    width: 100%;
+}
+
+.cart_title {
+    width: 100%;
+    padding: 0;
+    margin: 8px;
+    text-align: center;
+}
+
+.cart_summarizing {
+    width: 360px;
+    height: 250px;
+    position: absolute;
+    right: 32px;
+}
+
+.sum {
+    padding: 0;
+    margin: 0;
+    font-size: 16pt;
+}
+
+.pay_btn {
+    position: absolute;
+    right: -128px;
+    bottom: -48px;
+}
