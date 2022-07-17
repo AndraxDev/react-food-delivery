@@ -1,0 +1,21 @@
+.drawer {
+    width: 340px;
+    height: calc(100vh - 56px);
+    position: fixed;
+    top: 56px;
+    left: 0;
+}
+
+.drawer_bg {
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    border-radius: 8px;
+    background-color: rgba(0, 132, 255, 0.2);
+    margin: 16px;
+    overflow: auto;
+    overscroll-behavior-y: initial;
+}
+
+.drawer_title {
+    font-size: 18pt;
+}

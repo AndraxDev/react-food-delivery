@@ -1,0 +1,16 @@
+.loading_screen_bg {
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 132, 255, 0.2);
+}
+
+.loading_progress {
+    margin: 0;
+    position: fixed;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+}

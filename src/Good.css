@@ -1,0 +1,64 @@
+.good_card {
+    width: 600px;
+    height: 300px;
+    background-color: rgba(0, 132, 255, 0.2);
+    border-radius: 8px;
+    margin: 16px;
+    padding: 16px;
+    position: relative;
+}
+
+.good_cover {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(93, 175, 255);
+    border-radius: 8px;
+}
+
+.good_name {
+    color: #000000;
+    padding: 0;
+    margin: 4px;
+    font-size: 20pt;
+}
+
+.good_description {
+    color: #0c1217;
+    padding: 0;
+    margin: 4px;
+    font-size: 14pt;
+}
+
+.good_price {
+    color: rgb(0, 79, 157);
+    padding: 4px 24px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 16pt;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    right: 16px;
+    bottom: 16px;
+    position: absolute;
+    transition: .2s;
+        -webkit-transition: .2s;
+}
+
+.good_price:hover {
+    outline: none;
+    transition: .2s;
+        -webkit-transition: .2s;
+}
+
+.good_price:focus {
+    outline: none;
+}
+
+.good_price:active {
+    outline: none;
+}
+
+.price_btn {
+    width: 100px;
+}

@@ -1,0 +1,33 @@
+.debug_notification {
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: calc(100% - 48px);
+    margin: 8px;
+    border-radius: 8px;
+    text-align: start;
+    color: #ffffff;
+    padding: 16px;
+}
+
+.debug_title {
+    padding: 0;
+    margin: 0;
+    color: chartreuse;
+    font-size: 18px;
+    font-family: OCR-A, serif;
+}
+
+.debug_text {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.close_icon {
+    right: 24px;
+    font-size: 20px;
+    position: absolute;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}

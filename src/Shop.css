@@ -1,0 +1,28 @@
+.shop_item {
+    margin: 8px;
+    width: calc(100% - 16px);
+    display: flex;
+    text-align: start;
+    flex-direction: row;
+    border-radius: 50pc;
+    /*padding: 8px;*/
+    transition: .2s;
+        -webkit-transition: .2s;
+}
+
+.shop_item:hover {
+    background-color: rgba(0, 132, 255, 0.2);
+    cursor: pointer;
+    transition: .2s;
+        -webkit-transition: .2s;
+}
+
+.shop_item_icon {
+    width: 32px;
+    height: 32px;
+}
+
+.shop_item_text {
+    margin: 0;
+    padding: 4px;
+}
