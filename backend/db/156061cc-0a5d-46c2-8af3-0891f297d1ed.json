@@ -1,0 +1,86 @@
+{
+    "message": "OK",
+    "code": 200,
+    "shops": [
+        {
+            "name": "McDonalds",
+            "id": "5e82d24d-7a38-43a4-9a20-8e18012b3c3f",
+            "address": "Kosice-Zapad, Popradská, 040 11 Košice-Západ",
+            "goods": [
+                {
+                    "name": "Big McMenu",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+                    "id": "4233c55e-37f3-4a21-b35f-af7e80e2fd50",
+                    "price": "6.80",
+                    "photo": "https://i.pinimg.com/736x/48/e3/52/48e3528cbad706b77d2e7d96e74fda0c.jpg",
+                    "is_available": true
+                },
+                {
+                    "name": "Big Fries",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+                    "id": "06cd09b0-ccab-4ba5-a764-2f2b751cf35b",
+                    "price": "3.80",
+                    "photo": "https://s7d1.scene7.com/is/image/mcdonalds/t-mcdonalds-fries-medium:product-header-desktop?wid=830&hei=456&dpr=off",
+                    "is_available": true
+                },
+                {
+                    "name": "Chicken McNuggets 9pcs",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+                    "id": "9978f882-083f-4f83-a1e3-241a3333135a",
+                    "price": "4.50",
+                    "photo": "https://s7d1.scene7.com/is/image/mcdonalds/t-mcdonalds-Chicken-McNuggets-4pc-1:product-header-desktop?wid=829&hei=455&dpr=off",
+                    "is_available": true
+                }
+            ],
+            "is_available": true
+        },
+        {
+            "name": "Big Pizza",
+            "id": "f79a763c-2692-4cb6-adee-eb0bbe1f58eb",
+            "address": "Hlavná 65, 040 01 Staré Mesto",
+            "goods": [
+                {
+                    "name": "Salami pizza",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+                    "id": "06cd09b0-ccab-4ba5-a764-2f2b751cf35b",
+                    "price": "7.20",
+                    "photo": "https://ichkocheheute.de/wp-content/uploads/2017/08/P1120511.jpg",
+                    "is_available": true
+                },
+                {
+                    "name": "Margheritta pizza",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+                    "id": "fdafc4d5-c89b-4d97-8a21-cc1334c6a12e",
+                    "price": "7.50",
+                    "photo": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Pizza_Margherita_stu_spivack.jpg",
+                    "is_available": true
+                },
+                {
+                    "name": "Peperoni pizza",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+                    "id": "b1f49c10-6bf7-4568-8497-5d4ce59062e2",
+                    "price": "7.30",
+                    "photo": "https://www.tasteatlas.com/images/dishes/b05a0af72ad845f3a6abe16143d7853a.jpg",
+                    "is_available": true
+                },
+                {
+                    "name": "Ananas pizza",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+                    "id": "a6af94f3-ac4d-4689-8a2b-70d66d8d1db3",
+                    "price": "7.30",
+                    "photo": "https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/06/pizza-ananas-ev.jpg",
+                    "is_available": true
+                },
+                {
+                    "name": "Chicken pizza",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+                    "id": "db7e4888-c8e4-4931-8753-4919c765fafb",
+                    "price": "7.60",
+                    "photo": "https://www.budgetbytes.com/wp-content/uploads/2020/06/BBQ-Chicken-Pizza-one-slice.jpg",
+                    "is_available": true
+                }
+            ],
+            "is_available": true
+        }
+    ]
+}
