@@ -66,3 +66,25 @@ code {
   position: absolute;
   top: 56px;
 }
+
+.nav-links {
+  position: fixed;
+  top: 12px;
+  left: 16px;
+  font-size: 16pt;
+  color: #ffffff;
+}
+
+.nav-link {
+  transition: .2s;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  transition: .2s;
+  cursor: pointer;
+  color: aqua;
+  text-decoration: underline;
+}

@@ -26,7 +26,7 @@ function render_drawer(shops, state) {
 function render_goods(goods, shop) {
     const data = [];
 
-    goods.forEach(elem => data.push(<Good icon={react_icon} name={`${elem.name}`} description={`${elem.description}`} price={`${elem.price}`} address={`${elem.address}`} shop={`${shop}`} gid={`${elem.id}`}></Good>));
+    goods.forEach(elem => data.push(<Good  photo={`${elem.photo}`} name={`${elem.name}`} description={`${elem.description}`} price={`${elem.price}`} address={`${elem.address}`} shop={`${shop}`} gid={`${elem.id}`}></Good>));
 
     return(
         <>
@@ -100,6 +100,13 @@ function App() {
                             <Route index element={
                                 <div className="App">
                                     <header className="nav-bar">
+                                        <div className="nav-links">
+                                            <span>
+                                                <a className="nav-link" href="/">Shop</a>
+                                                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                                <a className="nav-link" href="/cart">Shopping Cart</a>
+                                            </span>
+                                        </div>
                                         <img src={logo} className="brand-logo" alt="logo"/>
                                     </header>
                                     <div className="content">
@@ -116,6 +123,13 @@ function App() {
                             <Route path="cart" element={
                                 <div className="App">
                                     <header className="nav-bar">
+                                        <div className="nav-links">
+                                            <span>
+                                                <a className="nav-link" href="/">Shop</a>
+                                                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                                <a className="nav-link" href="/cart">Shopping Cart</a>
+                                            </span>
+                                        </div>
                                         <img src={logo} className="brand-logo" alt="logo"/>
                                     </header>
                                     <div className="content">
