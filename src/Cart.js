@@ -37,7 +37,6 @@ function Cart() {
     const [errorEmail, setErrorEmail] = useState(false);
     const [errorPhone, setErrorPhone] = useState(false);
     const [errorAddress, setErrorAddress] = useState(false);
-
     const [stateName, setStateName] = useState("");
     const [stateEmail, setStateEmail] = useState("");
     const [statePhone, setStatePhone] = useState("");
@@ -144,6 +143,7 @@ function Cart() {
     if (p === 0) {
         const cookies = new Cookies();
         cookies.set("shop", "");
+        setError(true);
     }
 
     useEffect(() => {
