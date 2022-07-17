@@ -8,6 +8,7 @@ import Shop from "./Shop";
 import Good from "./Good";
 import Debug from "./Debug";
 import LoadingScreen from "./LoadingScreen";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function render_drawer(shops, state) {
     const data = [];
@@ -92,20 +93,44 @@ function App() {
             )
         } else {
             return (
-                <div className="App">
-                    <header className="nav-bar">
-                        <img src={logo} className="brand-logo" alt="logo"/>
-                    </header>
-                    <div className="content">
-                        <div className="debug_area">
-                            {/*<Debug debug={JSON.stringify(items, null, 4)}></Debug>*/}
-                            {/*<Debug debug={JSON.stringify(items.shops, null, 4)}></Debug>*/}
-                            {/*<Debug debug={tstate}></Debug>*/}
-                        </div>
-                        <Drawer shops={render_drawer(items.shops, setTState)} stateChanged={setTState}/>
-                        {isMLoaded ? <GoodsView goods={render_goods(mitems)} /> : null}
-                    </div>
-                </div>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/">
+                            <Route index element={
+                                <div className="App">
+                                    <header className="nav-bar">
+                                        <img src={logo} className="brand-logo" alt="logo"/>
+                                    </header>
+                                    <div className="content">
+                                        <div className="debug_area">
+                                            {/*<Debug debug={JSON.stringify(items, null, 4)}></Debug>*/}
+                                            {/*<Debug debug={JSON.stringify(items.shops, null, 4)}></Debug>*/}
+                                            {/*<Debug debug={tstate}></Debug>*/}
+                                        </div>
+                                        <Drawer shops={render_drawer(items.shops, setTState)} stateChanged={setTState}/>
+                                        {isMLoaded ? <GoodsView goods={render_goods(mitems)} /> : null}
+                                    </div>
+                                </div>
+                            } />
+                            <Route path="cart" element={
+                                <>
+                                    <h1>Cart</h1>
+                                </>
+                            } />
+                            <Route path="order" element={
+                                <>
+                                    <h1>Order</h1>
+                                </>
+                            } />
+                            <Route path="*" element={
+                                <>
+                                    <h1>404</h1>
+                                    <p>Not found</p>
+                                </>
+                            } />
+                        </Route>
+                    </Routes>
+                </BrowserRouter>
             );
         }
     }
