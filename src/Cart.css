@@ -5,7 +5,16 @@
     right: 0;
     bottom: 0;
     top: 56px;
+}
 
+.debug_area {
+    position: fixed;
+    width: 100vw;
+    min-height: 0;
+    max-height: 100vh;
+    z-index: 10;
+    overflow: auto;
+    overscroll-behavior-y: initial;
 }
 
 .cart_background {
@@ -51,6 +60,39 @@
 
 .pay_btn {
     position: absolute;
-    right: -128px;
+    right: -64px;
     bottom: -48px;
+}
+
+.cart_s {
+    display: flex;
+}
+
+.cart_left_section {
+    width: 50%;
+}
+
+.cart_right_section {
+    width: 50%;
+}
+
+.map {
+    width: calc(100% - 32px);
+    height: 300px;
+    margin: 16px;
+    border-radius: 8px;
+}
+
+.form {
+    width: calc(100% - 32px);
+    margin: 16px;
+}
+
+.field {
+    width: calc(100%);
+    margin: 16px;
+}
+
+.field_frame {
+    margin-top: 16px;
 }

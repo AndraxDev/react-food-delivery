@@ -17,10 +17,34 @@
 
 .cart_item_title {
     padding: 0;
-    margin: 0;
+    margin: 8px;
+    font-size: 20pt;
 }
 
 .cart_item_price {
     padding: 0;
-    margin: 0;
+    margin: 8px;
+    font-size: 16pt;
+}
+
+.clp {
+    width: 50%;
+}
+
+.crp {
+    width: 50%;
+    text-align: center;
+}
+
+.ccc {
+    display: flex;
+}
+
+.amount_selector {
+    width: 100%;
+}
+
+.field_amount_frame {
+    width: calc(100% - 32px);
+    margin: 24px 16px;
 }

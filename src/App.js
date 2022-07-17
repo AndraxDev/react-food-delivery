@@ -26,7 +26,7 @@ function render_drawer(shops, state) {
 function render_goods(goods) {
     const data = [];
 
-    goods.forEach(elem => data.push(<Good icon={react_icon} name={`${elem.name}`} description={`${elem.description}`} price={`${elem.price}`}></Good>));
+    goods.forEach(elem => data.push(<Good icon={react_icon} name={`${elem.name}`} description={`${elem.description}`} price={`${elem.price}`} gid={`${elem.id}`}></Good>));
 
     return(
         <>
