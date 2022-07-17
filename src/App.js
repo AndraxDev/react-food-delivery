@@ -23,10 +23,10 @@ function render_drawer(shops, state) {
     );
 }
 
-function render_goods(goods) {
+function render_goods(goods, shop) {
     const data = [];
 
-    goods.forEach(elem => data.push(<Good icon={react_icon} name={`${elem.name}`} description={`${elem.description}`} price={`${elem.price}`} gid={`${elem.id}`}></Good>));
+    goods.forEach(elem => data.push(<Good icon={react_icon} name={`${elem.name}`} description={`${elem.description}`} price={`${elem.price}`} address={`${elem.address}`} shop={`${shop}`} gid={`${elem.id}`}></Good>));
 
     return(
         <>
@@ -109,7 +109,7 @@ function App() {
                                             {/*<Debug debug={tstate}></Debug>*/}
                                         </div>
                                         <Drawer shops={render_drawer(items.shops, setTState)} stateChanged={setTState}/>
-                                        {isMLoaded ? <GoodsView goods={render_goods(mitems)} /> : null}
+                                        {isMLoaded ? <GoodsView goods={render_goods(mitems, tstate)} /> : null}
                                     </div>
                                 </div>
                             } />
